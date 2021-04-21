@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="container">
+    <header class="blog-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <a class="text-muted" href="#">Subscribe</a>
+        </div>
+        <div class="col-4 text-center">
+          <a class="blog-header-logo text-dark" href="/">Donhwi Na </a>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <a class="text-muted" href="#" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+          </a>
+          <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" href="/aboutme">About me</a>
+          <a class="p-2 text-muted" href="/project">Project</a>
+          <!-- <a class="p-2 text-muted" href="#">Contact</a>
+          <a class="p-2 text-muted" href="#">Skill Set</a> -->
+        </nav>
+    </div>
+</div>
+
+<main role="main" class="container">
+    <div class="row">
+      <div class="col-md-8 blog-main">
+        <h3 class="pb-4 mb-4 border-bottom">
+          I am...
+        </h3>
+  
+        <div class="blog-post">
+          <!-- <img src="{% static 'images/image001.jpeg' %}" width="720"  height="540"> -->
+          <h2 class="blog-post-title">a pro travler</h2>
+          <p class="blog-post-meta">November 3, 1994 🇰🇷 🇯🇵 🇮🇹 🇹🇼</p>
+          <p>경기도 포천을 시작으로 장성, 전주, 대구 등 전국을 누비면서 이제는 해외까지 정복하고 싶은 자칭 pro travler 나돈휘입니다.</p>
+          <hr>
+          <p><img src="{% static 'images/image001.jpeg' %}" width="720" height="540"></p>
+          <p>저는 책상에 앉아있는걸 좋아하는 어마어마한 집순이 입니다. 그런데 제가 <strong>pro travler</strong> 라니 이상하시죠?</p>
+          <blockquote>
+            <p>사실 저희 가족은 어렸을 때 부터 아빠를 따라 이사를 많이 다녔습니다. 그래서 그런지 저에게 새로운 환경과 낯선 사람들에 적응하는 것은 익숙한 일이었어요.
+               그 덕분에 전에 다녔던 회사에서도 일을 빠르게 배우고 회사 동료들과도 잘 지냈던 것 같습니다.</p>
+          </blockquote>
+          <blockquote>
+            <p>하지만 한편으로는 스트레스도 많이 받아왔었어요. 친한 친구들과 헤어져야했고, 정들었던 장소를 떠나야 했으니까요. 그래서 익숙한 장소인 <strong>집</strong>을 좋아하게 된 것 같아요. 
+               특히, 저는 책상에 앉아서 수학 문제 푸는걸 좋아했습니다. 수학 문제를 풀다보면 주변이 시끄러운지, 몸이 힘든지도 모른채 집중할 수 있었고, 집중하다보면 어느새 시간이 후루룩 지나있어요.
+               프로그래밍도 같은 맥락에서 제 마음에 들어왔던 것 같아요. 책상에 앉아서 생산적인 일을 할 수가 있고 그리고 무엇보다도 시간이 정말 정말 잘 갑니다! 무언가에 집중할 수 있다는 것이 저를 더 열정적이게 만들어요.</p>
+          </blockquote>
+          <blockquote>
+            <div style="width:292; height:284; border:1px; float:right; margin-left:20px;">
+                <img src="{% static 'images/image003.jpeg' %}" width="292" height="284">
+            </div>
+            <p>여행은 저에게 스트레스를 풀어주는 도구입니다. 평소에 체력을 비축해 두었다가 여행가서 한꺼번에 다 써버리고 옵니다. 저에게 여행이란 먹방? 호캉스? 둘 다 아니에요. 저에게 여행은 극한을 체험할 수 있는 혹사 여행입니다.
+               계획을 철저하게 짜서 그 날 갈 수 있는 모든 장소는 다 가보는 것 같아요. 대만에 갔을 때 정말 많이 걸었는데요 하루에 <strong>2만 5천보</strong>까지 걸어봤던 경험이 있어요. 혹사 여행을 하다보면 살아있음을 느낄 수 있습니다..ㅎㅎㅎ</p>
+          </blockquote>
+          <blockquote>
+              <p>요즘 코로나때문에 여행을 못가게 되다 보니 여행에 대한 갈망이 점점 더 커지는 것 같아요. 언젠가 맘편히 여행 다닐 수 있는 날이 오기를 손꼽아 기다리고 있습니다.</p>
+          </blockquote>
+        </div>
+
+        <hr>
+        <div class="blog-post">
+          <h2 class="blog-post-title">a cat butler</h2>
+          <p class="blog-post-meta">June 16, 2017 by <a href="#">Bazzi</a></p>
+          <hr>
+          <div style="width:370; height:480; border:1px; float:left; margin-right:20px;">
+            <img src="{% static 'images/image002.jpeg' %}" width="370" height="480">
+          </div>
+          <p> 귀엽지 않나요?😀 저를 집사로 만들어 준 저희 집 고양이입니다.</p>
+          <blockquote>
+              <p>이름은 배찌구요 나이는 4살입니다. 곧 생일을 앞두고 있어요. 배찌는 길고양이 출신인데요, 엄마 고양이 없이 혼자서 경마장을 떠도는 아기고양이를 주워서 누군가 임시 보호를 하고 있길래
+              엄마한테 등짝을 맞아가며 데려오게 되었던 기억이 나네요. 지금은 저희 집에서 없으면 안 될 식구가 되었습니다.</p>
+          </blockquote>
+          <blockquote>
+              <p>언젠가는 길고양이들을 위한 웹 사이트를 만들어 보고 싶어요. 아직은 생각만 해본 상태인데요. 만들기도 전에 악용되진 않을까 걱정이 됩니다. 고양이들한테도 살기 편한 세상이 되었으면 해요.</p>
+          </blockquote>
+          
+          
+        </div><!-- /.blog-post -->
+  
+        <!-- <nav class="blog-pagination">
+          <a class="btn btn-outline-primary" href="#">Older</a>
+          <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+        </nav> -->
+  
+      </div><!-- /.blog-main -->
+  
+      <aside class="col-md-4 blog-sidebar">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="font-italic">About</h4>
+          <p class="mb-0 font-italic">I am a pro travler<br>I am a cat butler<br>I am a person who likes to learn<br>I am a passionate person<br>...<br>I am going to be a backend developer</p>
+        </div>
+  
+        <div class="p-4">
+            <h4>Tech Stack</h4>
+            <ol class="list-unstyled mb-0">
+                <li>Python</li>
+                <li>Flask</li>
+                <li>BeautifulSoup4</li>
+                <li>Django</li>
+                <li>Java</li>
+            </ol>
+        </div>
+
+        <div class="p-4">
+          <h4>Archives</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="/project">April 2021</a></li>
+          </ol>
+        </div>
+  
+        <div class="p-4">
+          <h4>Contact me</h4>
+          <ol class="list-unstyled">
+            <li><a href="https://github.com/donhwi94" target="_blank"><img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white"/></a></li>
+            <li><a href="https://www.instagram.com/do.velop/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=Instagram&logoColor=white"/></a></li>
+            <li><a href="https://blog.naver.com/chlrkrkdoni" target="_blank"><img src="https://img.shields.io/badge/Blog-03C75A?style=for-the-badge&logo=Naver&logoColor=white"/></a></li>
+          </ol>
+        </div>
+      </aside><!-- /.blog-sidebar -->
+  
+    </div><!-- /.row -->
+  
+  </main><!-- /.container -->
+  
+  <footer class="blog-footer">
+    <p><a href="/aboutme">Back to top</a></p>
+  </footer>
+{% endblock %}
